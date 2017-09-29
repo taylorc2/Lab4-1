@@ -15,23 +15,23 @@
 public class ReclamationProject {
     /**
      *
-     * @param args
+     * @param args al;fdj
      */
    public static void main(final String[] args) {
     }
     /**
      *
-     * @param a String from user
-     * @param b String from user
+     * @param alpha String from user
+     * @param beta String from user
      * @return r
      */
     public static String pleaseDo(final String alpha, final String beta) {
         String a = alpha;
         String b = beta;
         if (a.length() > b.length()) {
-            String c = a; // TODO: set c to a
-            a=b;
-            b=c;
+            String c = a;  // set c to a
+            a = b;
+            b = c;
             }
         String r = "";
                 //(a.equals(b)) ? "" : ""; // I love the ternary operator!
@@ -41,8 +41,11 @@ public class ReclamationProject {
         for (int i = 0; i < a.length(); i++) {
             for (int j = a.length() - i; j > 0; j--) {
                 for (int k = 0; k < b.length() - j; k++) {
-                    boolean forR = a.regionMatches(i, b, k, j) && (j >r.length());
-                    r =  forR ? a.substring(i,i + j) : r; // Do it!
+                    boolean forR = a.regionMatches(i, b, k, j) && (j > r.length());
+                    String chance = a.substring(i, i + j);
+                    if (forR) {
+                        r =  chance; // Do it!
+                    }
                         }
                 } // Ah yeah
         }
