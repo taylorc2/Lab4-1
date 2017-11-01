@@ -9,7 +9,7 @@
  */
 
 /**
- * A class that prints Reclaims something maybe.
+ * A class that print Reclaims something maybe.
  *
  */
 public class ReclamationProject {
